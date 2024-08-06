@@ -472,11 +472,11 @@ body.dark-mode .toggle__label::after{
 
 /* Individual Image */
 .carousel-images img {
-    width: 50px; /* Adjust size as needed */
-    height: 50px;
+    width: 75px; /* Adjust size as needed */
+    height: 75px;
     padding: 20px;
     border-radius: 20%;
-    background-color: var(--neutral);
+    /* background-color: var(--neutral); */
 }
 
 

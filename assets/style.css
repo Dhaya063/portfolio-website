@@ -72,6 +72,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 5px 100px;
+    font-size: 20px;
 }
 
 nav ul {
@@ -82,7 +83,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 10px;
+    margin: 0 30px;
 }
 
 nav ul li a {
@@ -373,6 +374,10 @@ button {
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
 }
 
+.hire-me-button i{
+    margin-left: 5px;
+}
+
 /* Hover and Focus Effects */
 button:hover {
     background-color: var(--text-light); /* Background color on hover */
@@ -494,7 +499,7 @@ body.dark-mode .toggle__label::after{
 
 .case-studies h2{
     font-size: 30px;
-    margin: 30px 0 30px 0;
+     margin: 30px 0 30px 0;
 }
 
 .case-study-grid {
@@ -505,7 +510,7 @@ body.dark-mode .toggle__label::after{
 }
 
 .case-study {
-    flex: 1 1 calc(50% - 20px); /* 50% width minus gap */
+    flex: 1 1 calc(50% - 30px); /* 50% width minus gap */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -531,8 +536,8 @@ body.dark-mode .toggle__label::after{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    max-width: 500px; /* Ensure the info stays within image boundaries */
+    width: 90%;
+    max-width: 100%; /* Ensure the info stays within image boundaries */
     padding: 10px;
 }
 
@@ -540,7 +545,7 @@ body.dark-mode .toggle__label::after{
     text-decoration: none;
     color: var(--text-light);
     font-weight: 500;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .case-study-link:hover,
@@ -628,6 +633,7 @@ body.dark-mode .case-study-arrow:hover {
 .experience-text p {
     margin: 0;
     text-align: left;
+    font-size: 20px;
 }
 
 .visit-button {
@@ -702,6 +708,7 @@ body.dark-mode .visit-button:hover {
     justify-content: flex-start;
     align-items: center;
     width: 100%;
+    gap: 50px;
 }
 
 .hire-me-content {
@@ -710,7 +717,7 @@ body.dark-mode .visit-button:hover {
 
 .hire-me-content h1 {
     margin-bottom: 20px;
-    font-size: 75px;
+    font-size: 100px;
 }
 
 
@@ -743,6 +750,7 @@ body.dark-mode .visit-button:hover {
     overflow: hidden;
     transition: all 0.1s ease;
     text-decoration: none;
+    margin-bottom: 80px;
 }
 
 .circle-content {
@@ -815,6 +823,8 @@ body.dark-mode .hire-me-text{
     color: var(--text-light);
 }
 
+
+
 /* Case Study Pages */
 
 .case-study-details-page{
@@ -860,7 +870,7 @@ body.dark-mode .back-link:hover{
 
 /* Title */
 #case-study-details h1 {
-    font-size: 40px; /* Adjust font size */
+    font-size: 36px; /* Adjust font size */
     color: #000000; /* Dark gray color */
     margin-bottom: 30px; /* Space below the title */
 }
@@ -988,7 +998,7 @@ body.dark-mode #case-study-details p {
 #cs-problem-statement p ,
 #cs-solution p,
 #cs-result p{
-    font-size: 16px; /* Adjust font size as needed */
+    font-size: 18px; /* Adjust font size as needed */
     color: #333333; /* Text color */
     margin: 0; /* Remove default margin */
     max-width: 70%; /* Adjust width as needed */

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Case Study 1</title>
+    <title>Portfoilio Website</title>
     <link rel="stylesheet" href="assets/style.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,50 +14,54 @@
 </head>
 <body class="poppins-regular">
     <header>
-        <nav>
-            <div class="logo-name poppins-bold">
-                <p>My Portfoilio</p>
+        <nav class="navbar" id="navbar">
+           <div class="logo-name poppins-bold">
+                <p>My Portfolio</p>
             </div>
-            <ul>
-                <li><a href="index.html#case-studies" class="poppins-medium">Case Studies</a></li>
-                <li><a href="index.html#experience" class="poppins-medium">Experience</a></li>
-                <li><a href="index.html#hire-me" class="poppins-medium">Hire Me</i></a></li>
-            </ul>
-            <div class="toggle">
-                <input type="checkbox" id="mode-toggle" class="toggle__input">
-                <label for="mode-toggle" class="toggle__label"></label>
+            <i class="fa-solid fa-bars" id="menu-icon" aria-hidden="true"></i>
+            <div class="nav-right">
+                <ul class="navbar-link">
+                    <li><a href="index.html#case-studies" class="poppins-medium">Project</a></li>
+                    <li><a href="index.html#experience" class="poppins-medium">Experience</a></li>
+                    <li><a href="#" class="poppins-medium" target="_blank">Resume</a></li>
+                    <li><a href="#hire-me" class="poppins-medium">Hire Me</i></a></li>
+                </ul>
+                <div class="toggle">
+                    <input type="checkbox" id="mode-toggle" class="toggle__input">
+                    <label for="mode-toggle" class="toggle__label"></label>
+                </div>
             </div>
         </nav>
     </header>
-    <main class="case-study-details-page">
+    <main class="case-study-details-page" id="homepage">
 
         <!-- Details section -->
-        <section id="case-study-details" class="case-study-details">
+        <section id="case-study-details" class="case-study-details animate-on-scroll fadeInUp">
             <!-- Back button -->
             <div class="back-button">
                 <a href="index.html" class="back-link"><i class="fa-solid fa-angle-left"></i> Back</a>
             </div>
             <!-- Case study details -->
-            <h1 class="poppins-regular">Case Study name</h1>
-            <p class="poppins-regular">Case study details</p>
+            <h1 class="poppins-regular">Project name</h1>
+            <p class="poppins-regular">Project details</p>
             <a href="#visit" class="case-study-visit-button">Visit Link <i class="fas fa-arrow-right"></i></a>
-            <img src="assets/images/case-study/cs1-img1.avif" alt="Case Study 1">
+            <img class="animate-on-scroll zoomIn" src="assets/images/case-study/cs1-img1.avif" alt="Case Study 1">
         </section>
 
         <!-- problem Statement -->
-        <section id="cs-problem-statement" class="cs-problem-statement">
-            <h2 class="poppins-semibold">Problem Statement</h2>
+        <section id="cs-problem-statement" class="cs-problem-statement animate-on-scroll fadeInRight">
+            <h2 class="poppins-semibold">Statement</h2>
             <p class="poppins-regular">To stay ahead in the industry, Nebul seeks to redefine its focus by prioritizing sustainable projects aligned with cutting-edge technology and environmental practices, embodying its commitment to 'building the future today.' The problem lies in successfully navigating this shift in focus while ensuring operational efficiency and maintaining a competitive edge in the evolving architectural landscape."</p>
         </section>
 
         <!-- Solution -->
-        <section id="cs-solution" class="cs-solution">
+        <section id="cs-solution" class="cs-solution animate-on-scroll fadeInRight">
             <h2 class="poppins-semibold">Solution</h2>
             <p class="poppins-regular">A visual identity that is clean, minimalist, and modern, using a colour palette that evokes stability, confidence, and sophistication. An identity that evoke feelings of progress, modernity, and sustainability, while also exuding a sense of reliability and trust.</p>
         </section>
 
        <!-- Image Section -->
-        <section id="cs-images" class="cs-images">
+        <section id="cs-images" class="cs-images animate-on-scroll zoomIn">
             <div class="image-container">
                 <img src="assets/images/case-study/cs1-img2.avif" alt="Image 1" class="cs-image">
                 <img src="assets/images/case-study/cs1-img3.avif" alt="Image 2" class="cs-image">
@@ -65,7 +69,7 @@
         </section>
 
         <!-- Imagery -->
-        <section id="cs-imagery" class="cs-imagery">
+        <section id="cs-imagery" class="cs-imagery animate-on-scroll fadeInLeft">
             <div class="content-container">
                 <h2 class="poppins-semibold">Imagery</h2>
                 <div class="text-container">
@@ -76,13 +80,13 @@
         </section>
 
          <!-- Result -->
-         <section id="cs-result" class="cs-result">
+         <section id="cs-result" class="cs-result animate-on-scroll fadeInLeft">
             <h2 class="poppins-semibold">Result</h2>
             <p class="poppins-regular">A visual identity that is clean, minimalist, and modern, using a colour palette that evokes stability, confidence, and sophistication. An identity that evoke feelings of progress, modernity, and sustainability, while also exuding a sense of reliability and trust.</p>
         </section>
 
         <!-- Hire me section -->
-        <section id="hire-me">
+        <section id="hire-me" class="hire-me animate-on-scroll zoomIn">
             <div class="hire-me-container">
                 <div class="hire-me-content">
                     <h1 class="poppins-semibold">Let's Collaborate</h1>
@@ -102,7 +106,7 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="footer" id="footer">
         <div class="footer-content">
             <p class="poppins-medium">&copy; 2024 My Website</p>
             <button class="go-up-button" onclick="scrollToTop()">

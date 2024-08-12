@@ -14,25 +14,29 @@
 </head>
 <body class="poppins-regular">
     <header>
-        <nav>
-            <div class="logo-name poppins-bold">
-                <p>My Portfoilio</p>
+        <nav class="navbar" id="navbar">
+           <div class="logo-name poppins-bold">
+                <p>My Portfolio</p>
             </div>
-            <ul>
-                <li><a href="#case-studies" class="poppins-medium">Case Studies</a></li>
-                <li><a href="#experience" class="poppins-medium">Experience</a></li>
-                <li><a href="#hire-me" class="poppins-medium">Hire Me</i></a></li>
-            </ul>
-            <div class="toggle">
-                <input type="checkbox" id="mode-toggle" class="toggle__input">
-                <label for="mode-toggle" class="toggle__label"></label>
+            <i class="fa-solid fa-bars" id="menu-icon" aria-hidden="true"></i>
+            <div class="nav-right">
+                <ul class="navbar-link">
+                    <li><a href="#case-studies" class="poppins-medium">Project</a></li>
+                    <li><a href="#experience" class="poppins-medium">Experience</a></li>
+                    <li><a href="#" class="poppins-medium" target="_blank">Resume</a></li>
+                    <li><a href="#hire-me" class="poppins-medium">Hire Me</i></a></li>
+                </ul>
+                <div class="toggle">
+                    <input type="checkbox" id="mode-toggle" class="toggle__input">
+                    <label for="mode-toggle" class="toggle__label"></label>
+                </div>
             </div>
         </nav>
     </header>
     <main class="homepage" id="homepage">
         <!-- Section 1 -->
-        <section id="banner" class="banner">
-            <h2 class="poppins-regular">Hi I am Dhaya</h2>
+        <section id="banner" class="banner animate-on-scroll fadeInUp">
+            <h2 class="poppins-medium">Hi I am John</h2>
             <h1 class="poppins-medium">A Web Developer currently honing my skills and building dynamic web applications.</h1>
             <a href="#" alt="Hire Me Button"><button class="hire-me-button" id="hire-me-button">Hire Me  <i class="fas fa-arrow-right"></i></button> </a>
             <div class="carousel">
@@ -55,34 +59,34 @@
         </section>
 
         <!-- Section 2 -->
-        <section id="case-studies" class="case-studies">
-            <h2 class="poppins-semibold">Case Studies</h2>
+        <section id="case-studies" class="case-studies animate-on-scroll zoomIn">
+            <h2 class="poppins-semibold">Projects</h2>
             <div class="case-study-grid">
-                <div class="case-study">
-                    <img src="assets/images/case-study/case study 1.avif" alt="Case Study 1">
+                <div class="case-study animate-on-scroll zoomIn">
+                    <img src="assets/images/case-study/case study 1.avif" alt="Project 1">
                     <div class="case-study-info">
-                        <a href="case-study1.html" class="case-study-link">Case Study 1</a>
+                        <a href="case-study1.html" class="case-study-link">Project 1</a>
                         <a href="case-study1.html" class="case-study-arrow"><i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
-                <div class="case-study">
-                    <img src="assets/images/case-study/case study 2.avif" alt="Case Study 2">
+                <div class="case-study animate-on-scroll zoomIn">
+                    <img src="assets/images/case-study/case study 2.avif" alt="Project 2">
                     <div class="case-study-info">
-                        <a href="case-study2.html" class="case-study-link">Case Study 2</a>
+                        <a href="case-study2.html" class="case-study-link">Project 2</a>
                         <a href="case-study2.html" class="case-study-arrow"><i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
-                <div class="case-study">
-                    <img src="assets/images/case-study/case study 3.avif" alt="Case Study 3">
+                <div class="case-study animate-on-scroll zoomIn">
+                    <img src="assets/images/case-study/case study 3.avif" alt="Project 3">
                     <div class="case-study-info">
-                        <a href="case-study3.html" class="case-study-link">Case Study 3</a>
+                        <a href="case-study3.html" class="case-study-link">Project 3</a>
                         <a href="case-study3.html" class="case-study-arrow"><i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
-                <div class="case-study">
-                    <img src="assets/images/case-study/case study 4.avif" alt="Case Study 4">
+                <div class="case-study animate-on-scroll zoomIn">
+                    <img src="assets/images/case-study/case study 4.avif" alt="Project 4">
                     <div class="case-study-info">
-                        <a href="case-study4.html" class="case-study-link">Case Study 4</a>
+                        <a href="case-study4.html" class="case-study-link">Project 4</a>
                         <a href="case-study4.html" class="case-study-arrow"><i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
@@ -90,32 +94,32 @@
         </section>
         
         <!-- Section 3 -->
-        <section id="experience" class="experience">
+        <section id="experience" class="experience animate-on-scroll fadeInRight">
             <h2 class="poppins-semibold">Work Experience</h2>
         
             <!-- Experience 1 -->
             <div class="experience-content">
                 <div class="experience-text">
                     <h3 class="poppins-semibold">02/2024 - current</h3>
-                    <h1 class="poppins-medium">Detailed Overview of My Professional Experience</h1>
+                    <h1 class="poppins-medium">Professional Experience 1</h1>
                     <p class="poppins-regular">Here you will find information about my work history, projects, and accomplishments. I have gained valuable skills and experience throughout my career, which I am excited to share with you.</p>
                 </div>
-                <a href="#visit" class="visit-button">Visit <i class="fas fa-arrow-right"></i></a>
+                <!-- <a href="#visit" class="visit-button">Visit <i class="fas fa-arrow-right"></i></a> -->
             </div>
         
             <!-- Experience 2 -->
             <div class="experience-content">
                 <div class="experience-text">
                     <h3 class="poppins-semibold">02/2024 - current</h3>
-                    <h1 class="poppins-medium">Detailed Overview of My Professional Experience</h1>
+                    <h1 class="poppins-medium">Professional Experience 2</h1>
                     <p class="poppins-regular">Here you will find information about my work history, projects, and accomplishments. I have gained valuable skills and experience throughout my career, which I am excited to share with you.</p>
                 </div>
-                <a href="#visit" class="visit-button">Visit <i class="fas fa-arrow-right"></i></a>
+                <!-- <a href="#visit" class="visit-button">Visit <i class="fas fa-arrow-right"></i></a> -->
             </div>
         </section>
         
         <!-- Section 4 -->
-        <section id="hire-me">
+        <section id="hire-me" class="hire-me animate-on-scroll zoomIn">
             <div class="hire-me-container">
                 <div class="hire-me-content">
                     <h1 class="poppins-semibold">Let's Collaborate</h1>
@@ -136,7 +140,7 @@
         </section>
 
     </main>
-    <footer>
+    <footer class="footer" id="footer">
         <div class="footer-content">
             <p class="poppins-medium">&copy; 2024 My Website</p>
             <button class="go-up-button" onclick="scrollToTop()">

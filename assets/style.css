@@ -75,6 +75,18 @@ nav {
     font-size: 20px;
 }
 
+.nav-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#menu-icon{
+    font-size: 32px;
+    display: none;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -344,13 +356,13 @@ body.dark-mode .go-up-button:hover {
 }
 
 /* Banner */
-section {
+/* section {
     padding: 50px 0;
-}
+} */
 
 .banner h2{
     margin: 0;
-    font-size: 25px;
+    font-size: 36px;
 }
 
 .banner h1{
@@ -530,6 +542,11 @@ body.dark-mode .toggle__label::after{
     object-position: center center;
     object-fit: cover;
     image-rendering: auto;
+    box-shadow: 0 0px 10px rgba(17, 17, 17, 0.3);
+}
+
+body.dark-mode .case-study img{
+    box-shadow: 0 0px 10px rgba(193, 193, 193, 0.3);
 }
 
 .case-study-info {
@@ -539,6 +556,7 @@ body.dark-mode .toggle__label::after{
     width: 90%;
     max-width: 100%; /* Ensure the info stays within image boundaries */
     padding: 10px;
+    margin: 20px 0;
 }
 
 .case-study-link {
@@ -561,7 +579,7 @@ body.dark-mode .case-study-link:hover{
     background-color: var(--background-light); /* Background color */
     border: 2px solid var(--text-light); /* Border color */
     border-radius: 50px;
-    padding: 5px;
+    padding: 5px 10px;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
     width: 30px;
@@ -618,7 +636,7 @@ body.dark-mode .case-study-arrow:hover {
 }
 
 .experience-text {
-    max-width: 80%; /* Adjust width as needed */
+    max-width: 100%; /* Adjust width as needed */
 }
 
 .experience-text h3 {
@@ -900,10 +918,12 @@ body.dark-mode .back-link:hover{
     width: 100%;
     height: 500px;
     margin-top: 150px;
+    margin-bottom: 50px;
     border-radius: 50px;
     object-position: center center;
     object-fit: cover;
     image-rendering: auto;
+    box-shadow: 0 0px 10px rgba(17, 17, 17, 0.3);
 }
 
 /* Dark Mode Styles */
@@ -985,6 +1005,7 @@ body.dark-mode #case-study-details p {
     display: flex;
     justify-content: space-between; /* Distribute space between h2 and p */
     gap: 20px; /* Add gap between elements if needed */
+    padding: 30px 0;
 }
 
 #cs-problem-statement h2,
@@ -1061,6 +1082,7 @@ body.dark-mode #cs-images .cs-image {
     display: flex;
     justify-content: space-between; /* Distribute space between h2 and p */
     gap: 20px; /* Add gap between elements if needed */
+    padding: 30px 0;
 
 }
 
@@ -1085,7 +1107,7 @@ body.dark-mode #cs-images .cs-image {
 }
 
 #cs-imagery p {
-    font-size: 16px; /* Adjust font size */
+    font-size: 18px; /* Adjust font size */
     color: #000000; /* Medium gray color */
     line-height: 1.6; /* Improve readability */
     margin: 0; /* Remove default margin */
@@ -1106,3 +1128,701 @@ body.dark-mode #cs-imagery p {
 
 /* Media Queries */
 
+/* Extra Small Devices (Phones, 320px and down) */
+@media only screen and (max-width: 320px) {
+    /* Your CSS here */
+}
+
+/* Small Devices (Phones in landscape, 480px and down) */
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+    /* Your CSS here */
+
+    .homepage {
+        margin: 10px 20px;
+        /* transition: transform 0.3s ease-in-out; */
+    }
+
+    header {
+        width: auto;
+        z-index: 100;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .nav-right {
+        display: none; /* Initially hide the nav-right */
+        position: absolute;
+        top: 100%; /* Position it right below the header */
+        right: 100px; /* Align it to the right side */
+        width: 200px; /* Adjust width as needed */
+        z-index: 999;
+        text-align: center; /* Align text to the right */
+    }
+
+    .toggle{
+        margin-top: 10px;
+    }
+
+    .nav-right.active {
+        display: block; /* Show nav-right when active */
+    }
+    
+    nav {
+        padding: 5px 25px;
+        font-size: 16px;
+        position: relative;
+    }
+    
+    nav ul {
+        display: flex;
+        flex-direction: column; /* Arrange items one below the other */
+        padding: 0;
+        margin: 0;
+        gap: 10px;
+    }
+
+
+   nav a {
+        text-decoration: none;
+        padding: 10px;
+        display: block;
+    }
+
+    .navbar-link li {
+        font-size: 14px;
+        list-style: none; /* Remove bullet points */
+    }
+
+    section {
+        padding: 20px 0;
+    }
+    
+    .banner h2{
+        margin: 0 auto;
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 20px;
+        
+    }
+    
+    .banner-name{
+        font-size: 20px;
+    }
+    
+    .banner h1{
+        font-size: 28px;
+        margin: 0;
+    }
+
+    button {
+    font-size: 16px;
+    padding: 5px 15px;
+    }
+
+    .carousel-images {
+        gap: 60px;
+    }
+    
+    .carousel-images img {
+        width: 50px; 
+        height: 50px;
+        padding: 15px;
+    }
+    
+    .case-study-grid {
+        gap: 20px;
+       
+    }
+
+    .case-studies h2{
+    font-size: 24px;
+     margin: 0 0 30px 0;
+    }
+    
+    .case-study {
+        flex: 1 1 calc(50% - 20px);
+    }
+    .case-study img {
+        width: 320px;
+        height: 300px;
+         border-radius: 30px;
+    }
+    
+    .case-study-info {
+        width: 300px;
+    }
+    
+    .case-study-link {
+        font-size: 16px;
+    }
+    
+    .case-study-arrow {
+        border-radius: 50px;
+        padding: 5px 10px;
+        width: 20px;
+        height: 20px;
+    }
+    .case-study-arrow i {
+        font-size: 16px;
+    }
+    
+.experience-content {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+    
+.experience h2 {
+    font-size: 24px;
+    margin: 20px 0 20px 0;
+}
+
+.experience-text h3 {
+   font-size: 16px;
+}
+    
+    .experience-text h1 {
+        font-size: 18px;
+    }
+                
+    .experience-text p {
+        font-size: 16px;
+    }
+    
+    /* .hire-me-content {
+        max-width: 35%;
+    } */
+    
+    .hire-me-content h1 {
+        font-size: 30px;
+    }
+    
+    .social-link {
+        font-size: 25px;
+    }
+    
+    .circle-link {
+        width: 100px;
+        height: 100px;
+    }
+
+    .hire-me-text {
+       
+        font-size: 14px;
+    }
+
+    footer{
+         padding: 0px;
+          width: 100%;
+    }
+    
+    .footer-content {
+        width: 100%;
+        padding: 0 30px;
+       
+    }
+
+    .footer-content p{
+        font-size: 12px;
+    }
+    .go-up-button {
+    font-size: 12px;
+    border-radius: 80px;
+    padding: 10px;
+}
+
+.footer-content i{
+    margin-right: 4px; 
+}
+
+ /* Case Study Page */
+
+ .case-study-details-page{
+    margin: 10px 20px;
+}
+
+#case-study-details h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+#case-study-details p {
+    font-size: 18px; 
+    margin-bottom: 30px; 
+}
+
+#cs-problem-statement{
+  padding: 0px;
+}
+
+#cs-problem-statement h2,
+#cs-solution h2,
+#cs-result h2,
+#cs-imagery h2{
+font-size: 18px; 
+}
+
+#cs-problem-statement p ,
+#cs-solution p,
+#cs-result p,
+#cs-imagery p{
+font-size: 14px; 
+}
+
+.image-container {
+    gap: 30px;
+}
+
+#case-study-details img {
+     width: 100%;
+     height: 300px;
+ }
+
+ .cs-image {
+    width: 50%;
+    height: 150px; 
+     border-radius: 20px;
+}
+}
+
+/* Tablets and small desktops (portrait tablets and large phones, 768px and down) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* Your CSS here */
+    
+    .homepage {
+        margin: 0px 50px;
+    }
+
+    nav {
+        padding: 5px 50px;
+        font-size: 16px;
+    }
+
+    nav ul li {
+        margin: 0 20px;
+    }
+
+    
+    section {
+        padding: 50px 0;
+    }
+
+    .banner h2 {
+        margin: 10px 0;
+        font-size: 18px;
+    }
+
+    .banner-name {
+        font-size: 20px;
+    }
+
+    .banner h1 {
+        font-size: 36px;
+        margin: 0;
+    }
+
+    /* Carousel images adjustments */
+    .carousel-images {
+        gap: 60px;
+    }
+
+    .carousel-images img {
+        width: 65px; 
+        height: 65px;
+        padding: 10px;
+    }
+
+    body.dark-mode .carousel-images img{
+        background-color: var(--background-light);
+    }
+
+    /* Case study grid and elements */
+    .case-study-grid {
+        gap: 20px;
+    }
+
+    .case-study {
+        flex: 1 1 calc(50% - 20px);
+    }
+
+    .case-study img {
+        width: 300px;
+        height: 300px;
+        border-radius: 30px;
+    }
+
+    .case-study-info {
+        width: 250px;
+    }
+
+    .case-study-link {
+        font-size: 20px;
+    }
+
+    .case-study-arrow {
+        border-radius: 50px;
+        padding: 5px 10px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .case-study-arrow i {
+        font-size: 16px;
+    }
+
+    /* Experience section adjustments */
+    .experience-text h1 {
+        font-size: 24px;
+    }
+    
+    .experience-text p {
+        font-size: 18px;
+    }
+
+    /* Hire Me section adjustments */
+    .hire-me-content {
+        max-width: 100%;
+    }
+
+    .hire-me-content h1 {
+        font-size: 50px;
+    }
+
+    /* Social links adjustments */
+    .social-link {
+        font-size: 40px;
+        color: var(--text-light);
+        transition: color 0.3s ease;
+        padding-left: 10px;
+    }
+
+    /* Circle link adjustments */
+    .circle-link {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* Footer adjustments */
+    .footer-content {
+        width: 90%;
+    }
+
+    footer {
+        padding: 0px;
+        width: 100%;
+    }
+
+    /* Case Study Page */
+
+    .case-study-details-page{
+        margin: 10px 50px;
+    }
+
+    #case-study-details h1 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    #case-study-details p {
+        font-size: 18px; 
+        margin-bottom: 30px; 
+    }
+
+    #cs-problem-statement{
+      padding: 0px;
+  }
+
+    #cs-problem-statement h2,
+    #cs-solution h2,
+    #cs-result h2,
+    #cs-imagery h2{
+    font-size: 22px; 
+}
+
+    #cs-problem-statement p ,
+    #cs-solution p,
+    #cs-result p,
+    #cs-imagery p{
+    font-size: 16px; 
+}
+
+    .image-container {
+        gap: 30px;
+    }
+
+    #case-study-details img {
+         width: 100%;
+         height: 500px;
+     }
+
+     .cs-image {
+        width: 50%;
+        height: 400px; 
+        gap: 20px;
+    }
+   
+
+}
+
+/* Laptops and small desktops (1024px and down) */
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Your CSS here */
+    .homepage {
+        margin: 0px 50px;
+    }
+
+    nav {
+        padding: 5px 50px;
+        font-size: 18px;
+    }
+
+    nav ul li {
+        margin: 0 20px;
+    }
+
+    section {
+        padding: 50px 0;
+    }
+
+    .banner h2 {
+        margin: 10px 0;
+        font-size: 18px;
+    }
+
+    .banner-name {
+        font-size: 20px;
+    }
+
+    .banner h1 {
+        font-size: 40px;
+        margin: 0;
+    }
+
+    /* Carousel images adjustments */
+    .carousel-images {
+        gap: 60px;
+    }
+
+    .carousel-images img {
+        width: 75px; 
+        height: 75px;
+        padding: 15px;
+    }
+
+    body.dark-mode .carousel-images img{
+        background-color: var(--background-light);
+    }
+
+    /* Case study grid and elements */
+    .case-study-grid {
+        gap: 20px;
+    }
+
+    .case-study {
+        flex: 1 1 calc(50% - 20px);
+    }
+
+    .case-study img {
+        width: 400px;
+        height: 350px;
+        border-radius: 30px;
+    }
+
+    .case-study-info {
+        width: 350px;
+    }
+
+    .case-study-link {
+        font-size: 20px;
+    }
+
+    .case-study-arrow {
+        border-radius: 50px;
+        padding: 5px 10px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .case-study-arrow i {
+        font-size: 16px;
+    }
+
+    /* Experience section adjustments */
+    .experience-text h1 {
+        font-size: 30px;
+    }
+    
+    .experience-text p {
+        font-size: 18px;
+    }
+
+    /* Hire Me section adjustments */
+    .hire-me-content {
+        max-width: 100%;
+    }
+
+    .hire-me-content h1 {
+        font-size: 60px;
+    }
+
+    /* Social links adjustments */
+    .social-link {
+        font-size: 40px;
+        color: var(--text-light);
+        transition: color 0.3s ease;
+        padding-left: 10px;
+    }
+
+    /* Circle link adjustments */
+    .circle-link {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* Footer adjustments */
+    .footer-content {
+        width: 90%;
+    }
+
+    footer {
+        padding: 0px;
+        width: 100%;
+    }
+
+    /* Case Study Page */
+
+    .case-study-details-page{
+        margin: 10px 50px;
+    }
+
+    #case-study-details h1 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    #case-study-details p {
+        font-size: 18px; 
+        margin-bottom: 30px; 
+    }
+
+    #cs-problem-statement{
+      padding: 0px;
+  }
+
+    .image-container {
+        gap: 30px;
+    }
+
+    #case-study-details img {
+         width: 100%;
+         height: 500px;
+     }
+
+     .cs-image {
+        width: 50%;
+        height: 400px; 
+        gap: 20px;
+    }
+}
+
+/* Large Desktops (1200px and up) */
+@media only screen and (min-width: 1200px) {
+    /* Your CSS here */
+}
+
+/* Extra Large Desktops (1600px and up) */
+@media only screen and (min-width: 1600px) {
+    /* Your CSS here */
+}
+
+
+
+/* Animation */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-on-scroll {
+    opacity: 0; /* Start hidden */
+    transform: translateY(50px); /* Start below the viewport */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll.show {
+    animation: fadeInUp 0.6s forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.animate-on-scroll {
+    opacity: 0; /* Start hidden */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll.show.fadeInUp {
+    animation: fadeInUp 0.6s forwards;
+}
+
+.animate-on-scroll.show.fadeInLeft {
+    animation: fadeInLeft 0.6s forwards;
+}
+
+.animate-on-scroll.show.fadeInRight {
+    animation: fadeInRight 0.6s forwards;
+}
+
+.animate-on-scroll.show.zoomIn {
+    animation: zoomIn 0.6s forwards;
+}
